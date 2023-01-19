@@ -8,15 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
-  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
-  <link rel="manifest" href="Images/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="Favicon/site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+<!-- Header -->
   <header id="header">
     <div id="container">
       <nav id="nav-bar">
@@ -34,59 +36,128 @@
       </nav>
     </div>
   </header>
+
+<!-- Sections -->
   <main>
-    <section id="hero">
-      <div>
+    <section id="hero"> <!-- Main section -->
+      <div id="hero-txt">
         <h2>
-          Oi, meu nome é
+          Seja bem vindo, eu sou
         </h2>
-      </div>
-      <div>
         <h1>
           Yan Calvo
         </h1>
-      </div>
-      <div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque vitae sint illo, excepturi totam quia atque deserunt aut quasi modi molestias dignissimos quibusdam quidem nostrum eligendi, saepe voluptas. Omnis?
+          Estudante de Ciência da computação e desenvolvedor web 
         </p>
-      </div>     
+        <div class="social">
+          <a href="https://www.linkedin.com/in/yan-calvo-078592252/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+          <a href="https://github.com/yancalvo" target="_blank"><i class='bx bxl-github' ></i></a>
+        </div>
+      </div>    
     </section>
-    <section id="about-me">
+    <section id="about-me"> <!-- About section -->
       <div id="txt-container">
         <h2>Sobre mim</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti fuga amet minima ducimus eos distinctio itaque, mollitia impedit explicabo ea at asperiores officia provident porro, repudiandae saepe architecto sequi tempora facere eligendi. Vitae, dignissimos quibusdam molestias rerum modi architecto fuga corrupti, voluptatum tempora culpa consequuntur quod libero veritatis quisquam laborum necessitatibus debitis pariatur ducimus! Dicta ullam nisi laudantium dolor modi. Itaque id soluta iusto nostrum doloremque quibusdam consequatur impedit hic unde ipsa ea recusandae repellat excepturi maxime in corporis suscipit eligendi nobis voluptatem, qui perferendis delectus neque magni facilis! Expedita nisi repudiandae excepturi. Beatae officiis illum ea asperiores ipsa in.
+          Sou estudante de Ciência da computação, também
+          focado em aprender tecnologias de forma
+          independente. Possuo conhecimentos em HTML5,
+          CSS3, Javascript e versionamento através do
+          Git/Github. No momento me encontro dedicado a
+          aprimorar as minhas habilidades através da
+          experiência profissional e contato com outros
+          profissionais dedicados.<br><br>
+          O que mais me entusiasma em trabalhar com programação é poder projetar e criar coisas que tenham propósito e resolvam problemas reais.
+          Apoiar-se na pesquisa e percepção do cliente, encontrar as formas certas e dinâmicas de resolver determinados problemas, aprender com o processo e, em seguida, iterar e melhora-lo é a chave para um ótimo design.
         </p>
+      </div>
+      <div >
+        <h4 id="quote">
+          “<br>
+            Knowledge has to be improved, challenged, and increased constantly, or it vanishes.<br>
+          ”
+        </h4>
+        <h5>― Peter Drucker</h5>
       </div>       
     </section>
-    <section id="experience">
+    <section id="experience"> <!-- Experience section -->
       <div id="txt-container">
-        <h2>Experiência</h2>
+        <h2>Onde trabalhei  </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque vitae sint illo, excepturi totam quia atque deserunt aut quasi modi molestias dignissimos quibusdam quidem nostrum eligendi, saepe voluptas. Omnis?
         </p>
       </div>
     </section>
-    <section id="projects">
+
+    <section id="projects"> <!-- Projects section -->
       <div id="txt-container">
         <h2>Projetos</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque vitae sint illo, excepturi totam quia atque deserunt aut quasi modi molestias dignissimos quibusdam quidem nostrum eligendi, saepe voluptas. Omnis?
-        </p>
+        <p>Trabalhos pessoais realizados como forma de aprendizado</p>
       </div>
+      <div class="portfolio-content">
+        <div class="col">
+          <img src="Img/work3.jpg">
+          <div class="layer">
+            <h3>Web Design</h3>
+            <h5>Popup</h5>
+          </div>
+        </div>
+  
+        <div class="col">
+          <img src="Img/work3.jpg">
+          <div class="layer">
+            <h3>Web Design</h3>
+            <h5>Popup</h5>
+          </div>
+        </div>
+  
+        <div class="col">
+          <img src="Img/work3.jpg">
+          <div class="layer">
+            <h3>Web Design</h3>
+            <h5>Popup</h5>
+          </div>
+        </div>
+  
+        <div class="col">
+          <img src="Img/work3.jpg">
+          <div class="layer">
+            <h3>Web Design</h3>
+            <h5>Popup</h5>
+          </div>
+        </div>
+  
+        <div class="col">
+          <img src="Img/work3.jpg">
+          <div class="layer">
+            <h3>Web Design</h3>
+            <h5>Popup</h5>
+          </div>
+        </div>
+  
+        <div class="col">
+          <img src="Img/work3.jpg">
+          <div class="layer">
+            <h3>Web Design</h3>
+            <h5>Popup</h5>
+          </div>
+        </div>  
+      </div>
+
     </section>
-    <section id="contact-me">
+    <section id="contact-me"> <!-- Contact section -->
       <div id="txt-container">
-        <h2>Contato</h2>
+        <h2>Entre em contato</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque vitae sint illo, excepturi totam quia atque deserunt aut quasi modi molestias dignissimos quibusdam quidem nostrum eligendi, saepe voluptas. Omnis?
         </p>
       </div>
     </section>
-    <footer id="footer">
-      <h3>Projetado e construído por Yan Calvo</h3>
-    </footer>
-  </main> 
+  </main>
+<!-- Footer --> 
+  <footer id="footer">
+    <h6>Projetado e construído por Yan Calvo</h6>
+  </footer>
 </body>
 </html>
