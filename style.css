@@ -105,7 +105,7 @@ section {
 
 #hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +134,7 @@ section {
 }
 
 #about-me {
-  height: 800px;
+  min-height: 800px;
   padding-top: 40px;
   margin-bottom: 100px;
   display: grid;
@@ -144,7 +144,7 @@ section {
 }
 
 #experience {
-  height: 800px;
+  min-height: 800px;
   padding-top: 40px;
   margin-bottom: 100px;
   display: flex;
@@ -154,7 +154,7 @@ section {
 }
 
 #projects {
-  height: 800px;
+  min-height: 800px;
   padding-top: 40px;
   margin-bottom: 100px;
   display: flex;
@@ -165,8 +165,8 @@ section {
 }
 
 .portfolio-content {
-	display: flex;
-	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 5rem;
@@ -225,11 +225,11 @@ section {
 	opacity: 1;
 }
 
-.col{
+.col {
 	position: relative;
 }
 
-.col img{
+.col img {
 	max-width: 100%;
 	width: 550px;
 	height: auto;
@@ -238,8 +238,8 @@ section {
 }
 
 #contact-me {
-  height: 600px;
-  width: 60%;
+  min-height: 500px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 	display: flex;
@@ -340,14 +340,4 @@ p {
   }
 }
 
-@media (max-width: 800px){
 
-	#hero-txt{
-		padding-top: 55px;
-	}
-
-	section{
-		padding: 65px 3%;
-		transition: .3s;
-	}
-}
