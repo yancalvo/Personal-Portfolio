@@ -134,7 +134,8 @@ section {
 }
 
 #about-me {
-  min-height: 800px;
+  background-color: #191919;
+  min-height: 500px;
   padding-top: 40px;
   margin-bottom: 100px;
   display: grid;
@@ -144,7 +145,7 @@ section {
 }
 
 #experience {
-  min-height: 800px;
+  min-height: 300px;
   padding-top: 40px;
   margin-bottom: 100px;
   display: flex;
@@ -154,6 +155,7 @@ section {
 }
 
 #projects {
+  background-color: #191919;
   min-height: 800px;
   padding-top: 40px;
   margin-bottom: 100px;
@@ -164,7 +166,7 @@ section {
 	grid-gap: 2rem;
 }
 
-.portfolio-content {
+#portfolio-content {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(160px, auto));
 	grid-gap: 2rem;
@@ -237,7 +239,7 @@ section {
 	border-radius: 12px;
 }
 
-#contact-me {
+#habilities {
   min-height: 500px;
   width: 90%;
   margin-left: auto;
@@ -251,7 +253,7 @@ li {
   list-style: none;
 }
 
-#hero h1 {
+h1 {
   font-size: 90px;
   color: rgba(27,26,33,255);
   margin: 10px 0px 25px;
@@ -259,18 +261,28 @@ li {
 
 h2 {
   font-size: 30px;
-  color: rgba(27,26,33,255);
   margin-bottom: 60px;
 }
 
+#about-me h2,
+#projects h2
+{
+  color: #ece7e1;
+}
+
+#experience h2,
+#habilities h2 {
+  color: #191919;
+}
+
 h6 {
-  font-size: 12px;
+  font-size: 20px;
   color: white;
 }
 
 h4 {
   font-size: 40px;
-  color: rgba(27,26,33,255);
+  color: #ece7e1;
   font-style: italic;
 }
 
@@ -284,11 +296,51 @@ p {
 }
 
 #footer {
+  background-color: #191919;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px 100px;
 }
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 0.5s ease-in;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 @media(max-width:1800px) {
   #container {
