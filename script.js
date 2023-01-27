@@ -1,9 +1,31 @@
+//Toggle sidebar 
 const navContainer = document.getElementById('nav-menu')
+const menuBtn = document.getElementById('menu-icon')
 
-function handleMenuToggle() {
-  navContainer.classList.toggle('show-nav')
+menuBtn.onclick = function(e) {
+  //stop propagation of document click
+  e.stopPropagation()
+
+  //toggle side nav
+  if (!navContainer.classList.contains("open")) {
+    navContainer.classList.add("open");
+  } else {
+    navContainer.classList.remove("open");
+  }
 }
 
+//stop propagation on the side nav element
+navContainer.onclick = function(e) {
+  e.stopPropagation()
+}
+
+//close menu when document is clicked
+document.onclick = function() {
+  navContainer.classList.remove("open");
+}
+
+
+//Scroll animation
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 

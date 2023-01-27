@@ -59,7 +59,7 @@ header {
   margin: auto 30px;
 }
  
-.menu-icon {
+#menu-icon {
   display: none;
 }
 
@@ -275,6 +275,23 @@ h2 {
   color: #191919;
 }
 
+#habilities-container {
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+}
+
+#hability-icon {
+  width: 144px;
+  height: 144px;
+  transition: all 0.8s;
+}
+
+#hability-icon:hover {
+  height: 155px;
+  width: 155px;
+}
+
 h6 {
   font-size: 20px;
   color: white;
@@ -361,10 +378,10 @@ p {
     -moz-box-shadow: 1px 6px 0px 6px rgba(0,0,0,0.13);
     box-shadow: 1px 6px 0px 6px rgba(0,0,0,0.13);
     width: 250px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
 
-  #nav-menu.show-nav {
+  #nav-menu.open {
     right: 0;
   }
 
@@ -373,7 +390,7 @@ p {
     margin: 20px auto;
   }
 
-  .menu-icon {
+  #menu-icon {
     color: white;
     display: block;
     margin: auto 0;
